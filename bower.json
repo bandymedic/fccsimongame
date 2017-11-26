@@ -1,0 +1,22 @@
+{
+  "name": "fccsimon",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "authors": [
+    "Mostafa Eweda <mo.eweda@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bandymedic/fccsimongame",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
