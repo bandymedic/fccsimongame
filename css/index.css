@@ -6,3 +6,58 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.spacer {
+    padding: 5%;
+    background-color: dimgrey;
+    border-radius: 85px;
+}
+
+.spacer1 {
+    padding: 5%;
+}
+
+#btn1, #btn1-top {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    border-radius: 50px;
+    background-color: #00cc00;
+    z-index: 1;
+}
+
+#btn2, #btn2-top {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 250px;
+    top: 200px;
+    border-radius: 50px;
+    background-color: #00e5e6;
+    z-index: 1;
+}
+
+#btn3, #btn3-top {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 30px;
+    top: 410px;
+    border-radius: 50px;
+    background-color: #cc0000;
+    z-index: 1;
+}
+
+#btn4, #btn4-top {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 250px;
+    top: 410px;
+    border-radius: 50px;
+    background-color: #e5e600;
+    z-index: 1;
+}
+

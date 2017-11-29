@@ -3,47 +3,78 @@
     
     <head>
         <title> FCC Simon Game </title>
-        
+       
         <link rel = "stylesheet" href = "css/index.css" type = "text/css" />
+        
         <link rel = "stylesheet" href = "bower_components/bootstrap/dist/css/bootstrap.min.css" type = "text/css" />
         <link rel = "stylesheet" href = "bower_components/font-awesome/css/font-awesome.min.css" type = "text/css" />
-        
+         
         <script type = "text/javascript" src = "bower_components/jquery/dist/jquery.js"> </script>
         <script type = "text/javascript" src = "js/index.js"> </script>
+        
     </head>
     
     <body>
-        <div class = "spacer">
-            <h1> Free Code Camp <br>
-            Simon </h1>
-        </div>
         
-        <div class = "gameboard">
+        <div class = "page-wrap">
+        
+            <audio class="green-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+            <audio class="red-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+            <audio class="yellow-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+            <audio class="blue-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+        
+            <div class = "spacer">
+                <h1 class = "text-center"> Free Code Camp <br>
+                Simon </h1>
+            </div>
             
-            <div class = "btn top-left"></div>
+            <div class = "spacer1"></div>
             
-            <div class = "btn top-right"></div>
-            
-            <div class = "controls">
+            <div id = "gameboard">
                 
-                <div class = "on-off"></div>
+                <div id = "btn1" class = "btn1_active"></div> <div id = "btn1-top"></div>
                 
-                <div class = "counter"></div>
+                <div id = "btn2" class = "btn2_active"></div> <div id = "btn2-top"></div>
                 
-                <div class = "reset"></div>
+                <div id = "controls">
+                    
+                    <div id = "on-off">
+                        <div id = "tog1"> Off </div>
+                        <div id = "holder"></div>
+                        <div id = "switch"></div>
+                        <div id = "tog2"> On </div>
+                    </div>
+                    
+                    <div id = "start-box">
+                        <div id = "start"></div>
+                        <div id = "start-helper" class = "text-helper"> Start </div>
+                    </div>
+                    
+                    <div id = "counter-box"> 
+                        <div id = "counter"> -- </div>
+                        <div id = "counter-helper" class = "text-helper"> Counter </div>
+                    </div>
+                    
+                    <div id = "strict-box">
+                        <div id = "indicator"></div>
+                        <div id = "strict"></div>
+                        <div id = "strict-helper" class = "text-helper"> Strict! </div>
+                    </div>
+                    
+                </div>
                 
-                <div class = "challenge"></div>
+                <div id = "btn3" class = "btn3_active"></div> <div id = "btn3-top"></div>
+                
+                <div id = "btn4" class = "btn4_active"></div> <div id = "btn4-top"></div>
                 
             </div>
             
-            <div class = "btn bottom-right"></div>
-            
-            <div class = "btn bottom-left"></div>
-            
+            <div class = "spacer1"></div>
+        
         </div>
         
-        <div class = "spacer1"></div>
-        
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type = "text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type = "text/css">
     </body>
 
 </html>
