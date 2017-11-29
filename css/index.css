@@ -7,8 +7,21 @@ body {
     background-size: cover;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .spacer {
-    padding: 5%;
+    font-family: VT323;
+    font-size: 50px;
+    color: cornflowerblue;
+    position: relative;
+    width: 350px;
+    height: inherit;
+    line-height: 45px;
+    margin: 0 auto;
+    padding: 0.5%;
     background-color: dimgrey;
     border-radius: 85px;
 }
@@ -22,7 +35,7 @@ body {
     height: 100px;
     position: absolute;
     left: 30px;
-    top: 200px;
+    top: 30px;
     border-radius: 50px;
     background-color: #00cc00;
     z-index: 1;
@@ -33,7 +46,7 @@ body {
     height: 100px;
     position: absolute;
     left: 250px;
-    top: 200px;
+    top: 30px;
     border-radius: 50px;
     background-color: #00e5e6;
     z-index: 1;
@@ -44,7 +57,7 @@ body {
     height: 100px;
     position: absolute;
     left: 30px;
-    top: 410px;
+    top: 270px;
     border-radius: 50px;
     background-color: #cc0000;
     z-index: 1;
@@ -55,9 +68,205 @@ body {
     height: 100px;
     position: absolute;
     left: 250px;
-    top: 410px;
+    top: 270px;
     border-radius: 50px;
     background-color: #e5e600;
     z-index: 1;
 }
+
+.btn1_active: active, .btn1_on {
+    background-color: #00ff00 !important;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+.btn2_active: active, .btn2_on {
+    background-color: #00ffff !important;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.btn3_active: active, .btn3_on {
+    background-color: #ff0000 !important;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.btn4_active: active, .btn4_on {
+    background-color: #ffff00 !important;
+    box-shadow: 0 0 15px #ffff00;
+}
+
+#gameboard {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(40, 40, 40, 0.95);
+    box-shadow: 0 0 15px rgb(40, 40, 40);
+    border-radius: 50px;
+    z-index: 2;
+}
+
+#controls {
+    width: 400px;
+    height: 80px;
+    position: inherit;
+    top: 160px;
+    left: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(150, 150, 150);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#counter {
+    color: rgba(215, 0, 0, 0.5);
+    font-family: VT323;
+    font-size: 36px;
+}
+
+#counter-helper {
+    width: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 1px;
+    top: 30px;
+}
+
+#counter-box {
+  position: absolute;
+  left: 200px;
+  top: 15px;
+  border: 3px solid black;
+  border-radius: 50px;
+  background-color: #32050C;
+  width: 50px;
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#start {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  border-radius: 100%;
+  border: 3px solid black;
+  box-shadow: 0px 4px 10px -2px black;
+  margin-left: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+}
+
+#start:active {
+  box-shadow: 0px 0px 0px 0px black;
+  top: 5px;
+}
+
+#start-helper {
+  width: 40px;
+  position: absolute;
+  top: 35px;
+  left: 22px;
+}
+
+#start-box {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+}
+
+#indicator {
+  width: 8px;
+  height: 8px;
+  border: 2px solid black;
+  border-radius: 100%;
+  background-color: #32050C;
+  box-sizing: border-box;
+  position: absolute;
+  left: 28px;
+  top: -5px;  
+}
+
+#strict {
+  width: 25px;
+  height: 25px;
+  background-color: yellow;
+  border-radius: 100%;
+  border: 3px solid black;
+  box-shadow: 0px 4px 10px -2px black;
+  margin-left: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+}
+
+#strict:active {
+  box-shadow: 0 0 0 0 black;
+  top: 2px;
+}
+
+#strict-helper {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+
+#strict-box {
+  position: absolute;
+  top: 18px;
+  left: 105px;
+}
+
+.text-helper {
+  font-family: Ubuntu Condensed;
+  text-align: center;
+}
+
+#on-off {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  top: 22px;
+  left: 280px;
+  font-family: Ubuntu Condensed;
+  line-height: 20px;
+}
+
+#tog1, #tog2 {
+  display: inline-block;
+}
+
+#holder {
+  width: 60px;
+  height: 20px;
+  display: inline-block;
+  background-color: #232323;
+  border-radius: 50px;
+  position: relative;
+  top: 3.5px;
+  cursor: pointer;
+}
+
+#switch {
+  display: inline-block;
+  position: absolute;
+  left: 25px;
+  top: 4px;
+  width: 20px;
+  height: 18px;
+  background-color: lightblue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
 
