@@ -15,13 +15,8 @@
     </head>
     
     <body>
-        
+        <div id = "all">
         <div class = "page-wrap">
-        
-            <audio class="green-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
-            <audio class="red-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
-            <audio class="yellow-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
-            <audio class="blue-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
         
             <div class = "spacer">
                 <h1 class = "text-center"> Free Code Camp <br>
@@ -30,42 +25,39 @@
             
             <div class = "spacer1"></div>
             
-            <div id = "gameboard">
+            <div id = "gameboard" id = "all">
                 
-                <div id = "btn1" class = "btn1_active"></div> <div id = "btn1-top"></div>
+                <div id="0" class="pad green"></div>
                 
-                <div id = "btn2" class = "btn2_active"></div> <div id = "btn2-top"></div>
+                <div id="1" class="pad blue"></div>
                 
                 <div id = "controls">
                     
-                    <div id = "on-off">
-                        <div id = "tog1"> Off </div>
-                        <div id = "holder"></div>
-                        <div id = "switch"></div>
-                        <div id = "tog2"> On </div>
-                    </div>
-                    
-                    <div id = "start-box">
-                        <div id = "start"></div>
-                        <div id = "start-helper" class = "text-helper"> Start </div>
-                    </div>
-                    
-                    <div id = "counter-box"> 
-                        <div id = "counter"> -- </div>
-                        <div id = "counter-helper" class = "text-helper"> Counter </div>
-                    </div>
-                    
-                    <div id = "strict-box">
-                        <div id = "indicator"></div>
-                        <div id = "strict"></div>
-                        <div id = "strict-helper" class = "text-helper"> Strict! </div>
-                    </div>
-                    
+                  <div class="display-box">
+                      <div class="display inline">00</div>
+                  </div>
+                  
+                  <div class="start-box">
+                      <div class="start inline"></div>
+                      <div class="text-help">START</div>
+                  </div>
+                  
+                  <div class="strict-box">
+                      <div class="strict inline"></div>
+                      <div class="text-help">STRICT</div>
+                  </div>
+                  
+                  <div class="switch-container">
+                    <p class="off inline">OFF</p>
+                    <div class="switch outter-switch inline"><div class="inner-switch"></div></div>
+                    <p class="on inline">ON</p>
+                  </div>  
+                
                 </div>
                 
-                <div id = "btn3" class = "btn3_active"></div> <div id = "btn3-top"></div>
+                <div id="2" class="pad red"></div>
                 
-                <div id = "btn4" class = "btn4_active"></div> <div id = "btn4-top"></div>
+                <div id="3" class="pad yellow"></div>
                 
             </div>
             
@@ -75,6 +67,8 @@
         
         <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type = "text/css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type = "text/css">
+        
+        </div>
     </body>
 
 </html>

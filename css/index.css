@@ -7,10 +7,6 @@ body {
     background-size: cover;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
 .spacer {
     font-family: VT323;
@@ -30,68 +26,189 @@ body {
     padding: 5%;
 }
 
-#btn1, #btn1-top {
-    width: 200px;
-    height: 100px;
+.pad {
     position: absolute;
-    left: 30px;
-    top: 30px;
-    border-radius: 50px;
-    background-color: #00cc00;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+
+    margin: 50px 0 70px 65px;
     z-index: 1;
 }
 
-#btn2, #btn2-top {
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    left: 250px;
-    top: 30px;
-    border-radius: 50px;
-    background-color: #00e5e6;
-    z-index: 1;
+.green {
+    left: 60px;
+    top: 25px;
+
+    
+    box-shadow:
+    0 0 0 1em #00cc00,
+    0 1em 0 1em #00cc00,
+    -2.5em 1.5em 0 .5em #00cc00,
+    2.5em 1.5em 0 .5em #00cc00,
+    -3em -3em 0 0 #00cc00,
+    3em -3em 0 0 #00cc00,
+    -2em -2em 0 0 #00cc00,
+    2em -2em 0 0 #00cc00,
+    -3em -1em 0 0 #00cc00,
+    -2em -1em 0 0 #00cc00,
+    2em -1em 0 0 #00cc00,
+    3em -1em 0 0 #00cc00,
+    -4em 0 0 0 #00cc00,
+    -3em 0 0 0 #00cc00,
+    3em 0 0 0 #00cc00,
+    4em 0 0 0 #00cc00,
+    -5em 1em 0 0 #00cc00,
+    -4em 1em 0 0 #00cc00,
+    4em 1em 0 0 #00cc00,
+    5em 1em 0 0 #00cc00,
+    -5em 2em 0 0 #00cc00,
+    5em 2em 0 0 #00cc00,
+    -5em 3em 0 0 #00cc00,
+    -3em 3em 0 0 #00cc00,
+    3em 3em 0 0 #00cc00,
+    5em 3em 0 0 #00cc00,
+    -2em 4em 0 0 #00cc00,
+    -1em 4em 0 0 #00cc00,
+    1em 4em 0 0 #00cc00,
+    2em 4em 0 0 #00cc00;
+
+    background: #00cc00;
 }
 
-#btn3, #btn3-top {
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    left: 30px;
-    top: 270px;
-    border-radius: 50px;
-    background-color: #cc0000;
-    z-index: 1;
+.green-active {
+  background-color: darkgreen !important;
 }
 
-#btn4, #btn4-top {
-    width: 200px;
-    height: 100px;
+.blue {
+    left: 280px;
+    top: 25px;
+
+    box-shadow:
+    0 0 0 1em #00e5e6,
+    0 1em 0 1em #00e5e6,
+    -2.5em 1.5em 0 .5em #00e5e6,
+    2.5em 1.5em 0 .5em #00e5e6,
+    -3em -3em 0 0 #00e5e6,
+    3em -3em 0 0 #00e5e6,
+    -2em -2em 0 0 #00e5e6,
+    2em -2em 0 0 #00e5e6,
+    -3em -1em 0 0 #00e5e6,
+    -2em -1em 0 0 #00e5e6,
+    2em -1em 0 0 #00e5e6,
+    3em -1em 0 0 #00e5e6,
+    -4em 0 0 0 #00e5e6,
+    -3em 0 0 0 #00e5e6,
+    3em 0 0 0 #00e5e6,
+    4em 0 0 0 #00e5e6,
+    -5em 1em 0 0 #00e5e6,
+    -4em 1em 0 0 #00e5e6,
+    4em 1em 0 0 #00e5e6,
+    5em 1em 0 0 #00e5e6,
+    -5em 2em 0 0 #00e5e6,
+    5em 2em 0 0 #00e5e6,
+    -5em 3em 0 0 #00e5e6,
+    -3em 3em 0 0 #00e5e6,
+    3em 3em 0 0 #00e5e6,
+    5em 3em 0 0 #00e5e6,
+    -2em 4em 0 0 #00e5e6,
+    -1em 4em 0 0 #00e5e6,
+    1em 4em 0 0 #00e5e6,
+    2em 4em 0 0 #00e5e6;
+
+    background: #00e5e6;
+}
+
+.blue-active {
+  background-color: darkblue !important;
+}
+
+.red {
     position: absolute;
-    left: 250px;
-    top: 270px;
-    border-radius: 50px;
+    left: 60px;
+    top: 250px;
+    
+    box-shadow:
+    0 0 0 1em #cc0000,
+    0 1em 0 1em #cc0000,
+    -2.5em 1.5em 0 .5em #cc0000,
+    2.5em 1.5em 0 .5em #cc0000,
+    -3em -3em 0 0 #cc0000,
+    3em -3em 0 0 #cc0000,
+    -2em -2em 0 0 #cc0000,
+    2em -2em 0 0 #cc0000,
+    -3em -1em 0 0 #cc0000,
+    -2em -1em 0 0 #cc0000,
+    2em -1em 0 0 #cc0000,
+    3em -1em 0 0 #cc0000,
+    -4em 0 0 0 #cc0000,
+    -3em 0 0 0 #cc0000,
+    3em 0 0 0 #cc0000,
+    4em 0 0 0 #cc0000,
+    -5em 1em 0 0 #cc0000,
+    -4em 1em 0 0 #cc0000,
+    4em 1em 0 0 #cc0000,
+    5em 1em 0 0 #cc0000,
+    -5em 2em 0 0 #cc0000,
+    5em 2em 0 0 #cc0000,
+    -5em 3em 0 0 #cc0000,
+    -3em 3em 0 0 #cc0000,
+    3em 3em 0 0 #cc0000,
+    5em 3em 0 0 #cc0000,
+    -2em 4em 0 0 #cc0000,
+    -1em 4em 0 0 #cc0000,
+    1em 4em 0 0 #cc0000,
+    2em 4em 0 0 #cc0000;
+
+    background: #cc0000;
+}
+
+.red-active {
+  background-color: darkred !important;
+}
+
+.yellow {
+    left: 280px;
+    top: 250px;
     background-color: #e5e600;
-    z-index: 1;
+
+    box-shadow:
+    0 0 0 1em #e5e600,
+    0 1em 0 1em #e5e600,
+    -2.5em 1.5em 0 .5em #e5e600,
+    2.5em 1.5em 0 .5em #e5e600,
+    -3em -3em 0 0 #e5e600,
+    3em -3em 0 0 #e5e600,
+    -2em -2em 0 0 #e5e600,
+    2em -2em 0 0 #e5e600,
+    -3em -1em 0 0 #e5e600,
+    -2em -1em 0 0 #e5e600,
+    2em -1em 0 0 #e5e600,
+    3em -1em 0 0 #e5e600,
+    -4em 0 0 0 #e5e600,
+    -3em 0 0 0 #e5e600,
+    3em 0 0 0 #e5e600,
+    4em 0 0 0 #e5e600,
+    -5em 1em 0 0 #e5e600,
+    -4em 1em 0 0 #e5e600,
+    4em 1em 0 0 #e5e600,
+    5em 1em 0 0 #e5e600,
+    -5em 2em 0 0 #e5e600,
+    5em 2em 0 0 #e5e600,
+    -5em 3em 0 0 #e5e600,
+    -3em 3em 0 0 #e5e600,
+    3em 3em 0 0 #e5e600,
+    5em 3em 0 0 #e5e600,
+    -2em 4em 0 0 #e5e600,
+    -1em 4em 0 0 #e5e600,
+    1em 4em 0 0 #e5e600,
+    2em 4em 0 0 #e5e600;
+
+    background: #e5e600;
 }
 
-.btn1_active: active, .btn1_on {
-    background-color: #00ff00 !important;
-    box-shadow: 0 0 15px #00ff00;
-}
-
-.btn2_active: active, .btn2_on {
-    background-color: #00ffff !important;
-    box-shadow: 0 0 15px #00ffff;
-}
-
-.btn3_active: active, .btn3_on {
-    background-color: #ff0000 !important;
-    box-shadow: 0 0 15px #ff0000;
-}
-
-.btn4_active: active, .btn4_on {
-    background-color: #ffff00 !important;
-    box-shadow: 0 0 15px #ffff00;
+.yellow-active {
+  background-color: #e6d47e !important;
 }
 
 #gameboard {
@@ -101,7 +218,7 @@ body {
     margin: 0 auto;
     background-color: rgba(40, 40, 40, 0.95);
     box-shadow: 0 0 15px rgb(40, 40, 40);
-    border-radius: 50px;
+    border-radius: 50% / 20%;
     z-index: 2;
 }
 
@@ -111,87 +228,73 @@ body {
     position: inherit;
     top: 160px;
     left: 40px;
-    padding: 5px;
     border-radius: 50px;
     background-color: rgb(150, 150, 150);
-    box-sizing: border-box;
     margin: 0px;
-    padding: 0px;
 }
 
-#counter {
-    color: rgba(215, 0, 0, 0.5);
-    font-family: VT323;
-    font-size: 36px;
-}
-
-#counter-helper {
-    width: 30px;
-    box-sizing: border-box;
-    position: absolute;
-    left: 1px;
-    top: 30px;
-}
-
-#counter-box {
+.display-box {
   position: absolute;
-  left: 200px;
-  top: 15px;
+  left: 300px;
+  top: 20px;
   border: 3px solid black;
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: #32050C;
-  width: 50px;
+  width: 60px;
   height: 40px;
   line-height: 30px;
   text-align: center;
-  box-sizing: border-box;
+  box-sizing: border-box;    
 }
 
-#start {
+.display {
+    color: rgba(215, 0, 0, 0.5);
+    font-family: VT323;
+    font-size: 40px;
+    text-align: center;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-help, p {
+  font-family: Ubuntu Condensed;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.start-box {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.start {
   width: 25px;
   height: 25px;
   background-color: green;
   border-radius: 100%;
   border: 3px solid black;
   box-shadow: 0px 4px 10px -2px black;
-  margin-left: 30px;
-  box-sizing: border-box;
+  margin-left: 20px;
   cursor: pointer;
-  position: absolute;
-  top: 7px;
+  position: relative;
 }
 
-#start:active {
+.start:active {
   box-shadow: 0px 0px 0px 0px black;
   top: 5px;
 }
 
-#start-helper {
-  width: 40px;
+.strict-box {
   position: absolute;
-  top: 35px;
-  left: 22px;
+  top: 25px;
+  left: 90px;
 }
 
-#start-box {
-  position: absolute;
-  top: 18px;
-  left: 20px;
-}
-
-#indicator {
-  width: 8px;
-  height: 8px;
-  border: 2px solid black;
-  border-radius: 100%;
-  background-color: #32050C;
-  box-sizing: border-box;
-  position: absolute;
-  left: 28px;
-  top: -5px;  
-}
-
-#strict {
+.strict {
   width: 25px;
   height: 25px;
   background-color: yellow;
@@ -199,73 +302,51 @@ body {
   border: 3px solid black;
   box-shadow: 0px 4px 10px -2px black;
   margin-left: 20px;
-  box-sizing: border-box;
   cursor: pointer;
-  position: absolute;
-  top: 7px;
-  left: 0px;
+  position: relative;
 }
 
-#strict:active {
+.strict:active {
   box-shadow: 0 0 0 0 black;
   top: 2px;
 }
 
-#strict-helper {
+.switch-container {
   position: absolute;
-  top: 35px;
-  left: 15px;
+  top: 25px;
+  left: 170px;
 }
 
-#strict-box {
-  position: absolute;
-  top: 18px;
-  left: 105px;
-}
-
-.text-helper {
-  font-family: Ubuntu Condensed;
-  text-align: center;
-}
-
-#on-off {
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  top: 22px;
-  left: 280px;
-  font-family: Ubuntu Condensed;
-  line-height: 20px;
-}
-
-#tog1, #tog2 {
-  display: inline-block;
-}
-
-#holder {
+.outter-switch {
+  border: solid 2px black;
   width: 60px;
-  height: 20px;
-  display: inline-block;
-  background-color: #232323;
+  height: 25px;
+  background-color: black;
   border-radius: 50px;
-  position: relative;
-  top: 3.5px;
-  cursor: pointer;
 }
 
-#switch {
+.outter-active {
+  background-color: gray !important;
+}
+
+.inner-switch {
   display: inline-block;
-  position: absolute;
-  left: 25px;
-  top: 4px;
+  position: relative;
   width: 20px;
   height: 18px;
   background-color: lightblue;
   border: 1px solid black;
-  box-sizing: border-box;
   border-radius: 50px;
   cursor: pointer;
 }
+
+.inner-inactive {
+  background-color: black !important;
+  left: 33px;
+}
+
+
+
 
 
 
